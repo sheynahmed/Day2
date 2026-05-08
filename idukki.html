@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idukki | The Spice Garden of Kerala</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --kerala-green: #1b4d3e; /* Darker forest green for Idukki */
+            --kerala-gold: #d4af37;
+            --mist-white: #f0f4f1;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--mist-white);
+            color: #444;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--kerala-green);
+        }
+
+        /* Hero Carousel Adjustment */
+        .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(65%);
+        }
+
+        .carousel-caption {
+            bottom: 25%;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+        }
+
+        /* Content Sections */
+        .info-card {
+            background: white;
+            padding: 45px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            margin-top: -60px; 
+            position: relative;
+            z-index: 10;
+            border-left: 8px solid var(--kerala-green);
+        }
+
+        .attraction-img {
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transition: transform 0.4s ease;
+        }
+        
+        .attraction-img:hover {
+            transform: translateY(-5px);
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .btn-outline-green {
+            border: 2px solid var(--kerala-green);
+            color: var(--kerala-green);
+            font-weight: 600;
+            border-radius: 0;
+            padding: 12px 35px;
+            transition: 0.3s;
+        }
+
+        .btn-outline-green:hover {
+            background-color: var(--kerala-green);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Home.html" style="color: var(--kerala-green);">KERALA TOURISM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="districts.html">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="idukkiCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.mathrubhumi.com/view/acePublic/alias/contentid/1mtvypa8q9i0qrvtbpv/0/idukki-arch-dam.webp?f=3%3A2&q=0.75&w=1200" class="d-block w-100" alt="Idukki Arch Dam">
+                <div class="carousel-caption">
+                    <h1 class="display-2 text-white">Idukki</h1>
+                    <p class="fs-4">The Powerhouse of God's Own Country</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8ylhApR0BYnw-q-7nlCMbhY6P0vGSLlrWQ&s" class="d-block w-100" alt="Munnar Tea Gardens">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Mist-Clad Peaks</h1>
+                    <p class="fs-4">Wander through the emerald tea carpets of Munnar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 info-card">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="mb-4">Where the Clouds Touch the Earth</h2>
+                        <p class="lead-text">
+                            <strong>Idukki</strong> is Kerala's most nature-rich district, characterized by high-altitude mountains, dense tropical forests, and deep valleys. It is home to <strong>Anamudi</strong>, the highest peak in South India.
+                        </p>
+                        <p class="lead-text">
+                            From the engineering marvel of the <strong>Idukki Arch Dam</strong> (the first of its kind in Asia) to the wildlife sanctuaries of Thekkady, Idukki is an adventurer’s paradise and a sanctuary for those seeking the cool mountain breeze.
+                        </p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTocjtg8bMdb8yvmuCcHy_ZX_NsK7DpVB9LKQ&s" class="img-fluid rounded shadow-lg" alt="Thekkady Wildlife">
+                        <p class="text-muted mt-3 small">Periyar Tiger Reserve - Into the Wild</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Attractions Grid -->
+        <div class="mt-5 pt-4">
+            <h3 class="text-center mb-5">Idukki’s Majestic Landmarks</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent">
+                        <img src="https://media.assettype.com/metrovaartha-en%2F2026-03-01%2Fuloc49iy%2FNilgiri-tahr.JPG" class="attraction-img" alt="Eravikulam">
+                        <h5 class="mt-3">Eravikulam National Park</h5>
+                        <p class="small text-muted">Home to the endangered Nilgiri Tahr and Neelakurinji blooms.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent">
+                        <img src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2FVagamon%20cover%20image%20final.jpg%2FVagamon%20cover%20image%20final-1720182118134.jpg&w=2048&q=75" class="attraction-img" alt="Vagamon">
+                        <h5 class="mt-3">Vagamon Meadows</h5>
+                        <p class="small text-muted">Green rolling hills and pine forests perfect for paragliding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-transparent">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwh9keeNSkS3-8-e6iMnFOCFEf9x6vdZXd4w&s" class="attraction-img" alt="Arch Dam">
+                        <h5 class="mt-3">Idukki Arch Dam</h5>
+                        <p class="small text-muted">A magnificent structure standing between Kuravan and Kurathi hills.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="districts.html" class="btn btn-outline-green btn-lg px-5">Explore Other Districts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

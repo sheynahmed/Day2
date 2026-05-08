@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alappuzha | The Venice of the East</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --kerala-green: #2d5a27;
+            --kerala-gold: #d4af37;
+            --water-blue: #4a90e2;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fcfdfc;
+            color: #444;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--kerala-green);
+        }
+
+        /* Hero Carousel Adjustment */
+        .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .carousel-caption {
+            bottom: 20%;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Content Sections */
+        .info-card {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: -50px; 
+            position: relative;
+            z-index: 10;
+            border-bottom: 5px solid var(--water-blue); /* Blue accent for the water district */
+        }
+
+        .attraction-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .attraction-img:hover {
+            transform: scale(1.03);
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .btn-outline-green {
+            border: 2px solid var(--kerala-green);
+            color: var(--kerala-green);
+            font-weight: 600;
+            border-radius: 0;
+            transition: 0.3s;
+        }
+
+        .btn-outline-green:hover {
+            background-color: var(--kerala-green);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Home.html" style="color: var(--kerala-green);">KERALA TOURISM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="districts.html">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.worldatlas.com/r/w768/upload/fe/50/31/shutterstock-1090080311.jpg" class="d-block w-100" alt="Alappuzha Houseboats">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Alappuzha</h1>
+                    <p class="fs-4">The Venice of the East</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://keralatourism.travel/images/destinations/headers/alappuzha-beach-kerala-tourism-entry-fee-timings-header.jpg" class="d-block w-100" alt="Alappuzha Beach">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Infinite Horizons</h1>
+                    <p class="fs-4">Where the waves meet ancient history</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 info-card">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="mb-4">A Labyrinth of Azure Waters</h2>
+                        <p class="lead-text">
+                            <strong>Alappuzha</strong> is the hub of Kerala's backwaters. Crisscrossed by a network of canals, it is famous for its majestic <em>Kettuvallams</em> (houseboats) that float lazily over the Vembanad Lake.
+                        </p>
+                        <p class="lead-text">
+                            Whether it is the adrenaline of the <strong>Nehru Trophy Boat Race</strong> or the serene sunsets at the Alappuzha beach with its 150-year-old pier, this district remains the most romanticized destination in God's Own Country.
+                        </p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="data:image/jpeg;base64,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" class="img-fluid rounded shadow" alt="Houseboat Kerala">
+                        <p class="text-muted mt-2 small">Experience life on the water</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Attractions Grid -->
+        <div class="mt-5 pt-4">
+            <h3 class="text-center mb-5">Unmissable Alappuzha Experiences</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://content.jdmagicbox.com/comp/delhi/f4/011pxx11.xx11.221122200332.y8f4/catalogue/kuttanadan-kerala-kitchen-palam-delhi-restaurants-yLe2MZwJTW.jpg" class="attraction-img" alt="Kuttanad">
+                    <h5 class="mt-3">Kuttanad Rice Bowls</h5>
+                    <p class="small text-muted">The 'Rice Bowl of Kerala', where farming is done below sea level.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WnaUjz7d-4xBjonvG-7BRPLNYRqRNCZeNw&s" class="attraction-img" alt="Beach">
+                    <h5 class="mt-3">Alappuzha Beach</h5>
+                    <p class="small text-muted">A popular hangout famous for its historic lighthouse and pier.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5p_GiIWHicGbuHBbwtwX70N1TDoCFMn7XQ&s" class="attraction-img" alt="Island">
+                    <h5 class="mt-3">Pathiramanal Island</h5>
+                    <p class="small text-muted">A birdwatcher's paradise accessible only by boat.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="districts.html" class="btn btn-outline-green btn-lg px-5">Explore More Districts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

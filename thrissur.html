@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrissur | The Cultural Capital of Kerala</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --kerala-green: #2d5a27;
+            --kerala-gold: #d4af37;
+            --festival-red: #b22222;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fcfdfc;
+            color: #444;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--kerala-green);
+        }
+
+        /* Hero Carousel Adjustment */
+        .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        .carousel-caption {
+            bottom: 20%;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+        }
+
+        /* Content Sections */
+        .info-card {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: -50px; 
+            position: relative;
+            z-index: 10;
+            border-bottom: 5px solid var(--festival-red); /* Red accent for the vibrant culture */
+        }
+
+        .attraction-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .attraction-img:hover {
+            transform: scale(1.03);
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .btn-outline-green {
+            border: 2px solid var(--kerala-green);
+            color: var(--kerala-green);
+            font-weight: 600;
+            border-radius: 0;
+            transition: 0.3s;
+        }
+
+        .btn-outline-green:hover {
+            background-color: var(--kerala-green);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Home.html" style="color: var(--kerala-green);">KERALA TOURISM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="districts.html">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="thrissurCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://lumiereholidays.com/storage/blog/1763545090691d9002c369b.jpeg" class="d-block w-100" alt="Thrissur Pooram">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Thrissur</h1>
+                    <p class="fs-4">The Cultural Capital of Kerala</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/roundglass/image/upload/v1774854129/rg/collective/media/kerala-athirapally-falls-habitat-landscape-dhritiman-mukherjee_chyn1y.jpg" class="d-block w-100" alt="Athirappilly Waterfalls">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Athirappilly</h1>
+                    <p class="fs-4">The Niagara of India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 info-card">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="mb-4">The Land of Festivals</h2>
+                        <p class="lead-text">
+                            <strong>Thrissur</strong> is world-renowned for the <strong>Thrissur Pooram</strong>, the most spectacular temple festival in India. It is a city built around a massive teak forest and the grand Vadakkunnathan Temple.
+                        </p>
+                        <p class="lead-text">
+                            As the heart of Kerala's heritage, Thrissur is home to the Kerala Kalamandalam—a prestigious center for performing arts like Kathakali—and boasts the majestic <strong>Athirappilly Waterfalls</strong>, the largest fall in the state.
+                        </p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/%E0%B4%B5%E0%B4%9F%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%81%E0%B4%82%E0%B4%A8%E0%B4%BE%E0%B4%A5%E0%B4%95%E0%B5%8D%E0%B4%B7%E0%B5%87%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%82-%E0%B4%A4%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%87%E0%B4%97%E0%B5%8B%E0%B4%AA%E0%B5%81%E0%B4%B0%E0%B4%82.jpg" class="img-fluid rounded shadow" alt="Vadakkunnathan Temple">
+                        <p class="text-muted mt-2 small">Vadakkunnathan Temple - An Ancient Marvel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Attractions Grid -->
+        <div class="mt-5 pt-4">
+            <h3 class="text-center mb-5">Cultural & Natural Wonders</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://media.assettype.com/thequint%2F2024-04%2Ffa7119dd-29ab-4a43-915f-3e1add201c5f%2Fa650af9d_cb1e_41fb_be1d_f09f300adb32.jpg?auto=format%2Ccompress&fmt=webp&width=720" class="attraction-img" alt="Pooram">
+                    <h5 class="mt-3">Thrissur Pooram</h5>
+                    <p class="small text-muted">A vibrant display of caparisoned elephants, percussion, and fireworks.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://res.cloudinary.com/roundglass/image/upload/v1774854129/rg/collective/media/kerala-athirapally-falls-habitat-landscape-dhritiman-mukherjee_chyn1y.jpg" class="attraction-img" alt="Athirappilly">
+                    <h5 class="mt-3">Athirappilly Falls</h5>
+                    <p class="small text-muted">A breathtaking waterfall often called the "Niagara of India."</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8K-hRijy63tre4K6pcBjrPQmoE--OX_44wA&s" class="attraction-img" alt="Kalamandalam">
+                    <h5 class="mt-3">Kerala Kalamandalam</h5>
+                    <p class="small text-muted">A premier academy for Kerala's traditional performing arts.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="districts.html" class="btn btn-outline-green btn-lg px-5">Back to Districts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

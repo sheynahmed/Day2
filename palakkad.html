@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palakkad | The Granary of Kerala</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --kerala-green: #2d5a27;
+            --kerala-gold: #d4af37;
+            --mountain-brown: #5d4037;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fcfdfc;
+            color: #444;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--kerala-green);
+        }
+
+        /* Hero Carousel Adjustment */
+        .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(65%);
+        }
+
+        .carousel-caption {
+            bottom: 20%;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+        }
+
+        /* Content Sections */
+        .info-card {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: -50px; 
+            position: relative;
+            z-index: 10;
+            border-bottom: 5px solid var(--kerala-gold);
+        }
+
+        .attraction-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .attraction-img:hover {
+            transform: scale(1.03);
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .btn-outline-green {
+            border: 2px solid var(--kerala-green);
+            color: var(--kerala-green);
+            font-weight: 600;
+            border-radius: 0;
+            transition: 0.3s;
+        }
+
+        .btn-outline-green:hover {
+            background-color: var(--kerala-green);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Home.html" style="color: var(--kerala-green);">KERALA TOURISM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="districts.html">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="palakkadCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.kerala.com/userfiles/1548914746_palakkad.jpg" class="d-block w-100" alt="Palakkad Fort">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Palakkad</h1>
+                    <p class="fs-4">The Land of Palmyra Trees and Paddy Fields</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/e0/95/9b/malampuzha-garden-and.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="Malampuzha Gardens">
+                <div class="carousel-caption">
+                    <h1 class="display-3 text-white">Malampuzha</h1>
+                    <p class="fs-4">The Vrindavan of Kerala</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 info-card">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="mb-4">Gateway to the Ghats</h2>
+                        <p class="lead-text">
+                            <strong>Palakkad</strong> is a vast expanse of fertile plains and mountains, lying at the foot of the Western Ghats. It is famous for the <strong>Palakkad Gap</strong>, a natural break in the mountain range that connects Kerala to the plains of Tamil Nadu.
+                        </p>
+                        <p class="lead-text">
+                            Known for its unique culture, traditional music, and the historic <strong>Palakkad Fort</strong> built by Hyder Ali, this district is a paradise for nature lovers and history buffs alike. It is also home to the <strong>Silent Valley National Park</strong>, an untouched tropical evergreen forest.
+                        </p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Ftablet%2Fsilent-valley-1759915485_65af857681f1974571ed.webp&w=1920&q=75" class="img-fluid rounded shadow" alt="Silent Valley">
+                        <p class="text-muted mt-2 small">Silent Valley - Nature in its Purest Form</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Attractions Grid -->
+        <div class="mt-5 pt-4">
+            <h3 class="text-center mb-5">Nature & History Combined</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://5.imimg.com/data5/MT/VE/JI/SELLER-13735627/palakkad-fort-tourism.PNG" class="attraction-img" alt="Fort">
+                    <h5 class="mt-3">Palakkad Fort</h5>
+                    <p class="small text-muted">A remarkably preserved 18th-century granite fort in the heart of the city.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVh3w6VM_fCe8raqLBAHlEHEDFnDizKijCyw&s" class="attraction-img" alt="Nelliyampathy">
+                    <h5 class="mt-3">Nelliyampathy Hills</h5>
+                    <p class="small text-muted">A beautiful hill station famous for its orange farms and tea plantations.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvxGkh2qj8vRUXN9pKG3JNpdbMbuHbziAXw&s" class="attraction-img" alt="Parambikulam">
+                    <h5 class="mt-3">Parambikulam Tiger Reserve</h5>
+                    <p class="small text-muted">A premier wildlife sanctuary and home to the world's oldest teak tree.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="districts.html" class="btn btn-outline-green btn-lg px-5">Back to Districts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

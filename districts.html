@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Districts | Kerala Tourism</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            padding-bottom: 50px;
+        }
+
+        .district-header {
+            padding: 60px 0;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.keralatourism.org/images/banner/desktop/destinations.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            border-radius: 0; /* Makes them perfectly square corners */
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            height: 100%; /* Ensures all cards in a row have equal height */
+        }
+
+        /* Shadow hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Square Image Standardizer */
+        .card-img-top {
+            width: 100%;
+            height: 220px; /* Standard height for all images */
+            object-fit: cover; /* This prevents stretching */
+            border-radius: 0;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #2d5a27;
+        }
+
+        .btn-primary {
+            background-color: #2d5a27;
+            border: none;
+            border-radius: 0; /* Square buttons to match cards */
+            padding: 10px 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3d1a;
+        }
+
+        /* Grid spacing */
+        .row {
+            --bs-gutter-y: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="Home.html">KERALA TOURISM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="districts.html">Districts</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="district-header text-center">
+    <h1 class="display-4">Explore the 14 Districts</h1>
+    <p>Each corner of Kerala offers a unique piece of paradise.</p>
+</div>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        
+        <!-- Thiruvananthapuram -->
+        <div class="col">
+            <div class="card">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/padmanabhaswamy-temple-thiruvananthapuram-kerala-city-ff?qlt=82&ts=1742155592663" class="card-img-top" alt="TVM">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Thiruvananthapuram</h5>
+                    <p class="card-text text-muted small">The capital city, home to majestic temples and golden beaches.</p>
+                    <a href="tvm.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kollam -->
+        <div class="col">
+            <div class="card">
+                <img src="https://www.keralabackwater.com/wp-content/uploads/2019/01/jatayupara-2-1.jpg" class="card-img-top" alt="Kollam">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Kollam</h5>
+                    <p class="card-text text-muted small">An ancient seaport known for cashew trade and the Ashtamudi Lake.</p>
+                    <a href="kollam.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pathanamthitta -->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPzbmuKxlMYQ2Jk2FLWUgs5uZdY0oGkTudg&s" class="card-img-top" alt="Pathanamthitta">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Pathanamthitta</h5>
+                    <p class="card-text text-muted small">The pilgrim capital of Kerala, surrounded by lush wild forests.</p>
+                    <a href="pathanamthitta.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alappuzha -->
+        <div class="col">
+            <div class="card">
+                <img src="https://www.worldatlas.com/r/w768/upload/fe/50/31/shutterstock-1090080311.jpg" class="card-img-top" alt="Alappuzha">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Alappuzha</h5>
+                    <p class="card-text text-muted small">The "Venice of the East," famous for houseboats and backwaters.</p>
+                    <a href="alappuzha.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Idukki -->
+        <div class="col">
+            <div class="card">
+                <img src="https://img.mathrubhumi.com/view/acePublic/alias/contentid/1mtvypa8q9i0qrvtbpv/0/idukki-arch-dam.webp?f=3%3A2&q=0.75&w=900" class="card-img-top" alt="Idukki">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Idukki</h5>
+                    <p class="card-text text-muted small">Highland district offering trekking, dams, and spice plantations.</p>
+                    <a href="idukki.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Kottayam-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXlt-5sQepNxeiEtDIKSLAbkhJsyaZQ233Q&s" class="card-img-top" alt="Kottayam">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Kottayam</h5>
+                    <p class="card-text text-muted small">Known for its literacy and rubber plantations, a blend of culture and nature.</p>
+                    <a href="kottayam.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ernakulam -->
+        <div class="col">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Kochi_International_Marina%2C_Bolgatty_Island%2C_Kerala%2C_India.jpg" class="card-img-top" alt="Kochi">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Ernakulam</h5>
+                    <p class="card-text text-muted small">The commercial hub of Kerala, blending history and modernity.</p>
+                    <a href="ernakulam.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Thrissur -->
+         <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHA_-oOb1Yud1MLOrhkCc06XPmbSKvVEmebMxjIRAvjenFvyo5" class="card-img-top" alt="Thrissur">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Thrissur</h5>
+                    <p class="card-text text-muted small">Known as the cultural capital, famous for festivals and temples.</p>
+                    <a href="thrissur.html" class="btn btn-primary mt-auto" target="_blank">More details</a>  
+                </div>
+            </div>
+                 
+         </div>
+         <!--Palakkad-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqigPgAvCprUXNAJu1YKIIWevkRNEeCNdWzQ&s" class="card-img-top" alt="Palakkad">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Palakkad</h5>
+                    <p class="card-text text-muted small">The gateway to Kerala, known for its lush greenery and historical forts.</p>
+                    <a href="palakkad.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Malappuram -->
+        <div class="col">
+            <div class="card">
+                <img src="https://images.trvl-media.com/place/6137009/121092a1-98f2-4799-ab61-2d236b10f14b.jpg" class="card-img-top" alt="Malappuram">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Malappuram</h5>
+                    <p class="card-text text-muted small">A blend of culture and nature, known for its hills, rivers, and historical sites.</p>
+                    <a href="malappuram.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+      <!-- Kozhikode -->
+         <div class="col">
+              <div class="card">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVjlMyJCavLuJkGwwCnRaqdrP8KZY5Vq7E8Q&s" class="card-img-top" alt="Kozhikode">
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Kozhikode</h5>
+                      <p class="card-text text-muted small">Known for its beautiful beaches and rich cultural heritage.</p>
+                      <a href="kozhikode.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                  </div>
+              </div>
+          </div>
+        <!-- Wayanad -->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcd6BI2-NHf9Oh9cxzGvWR1TMp4lCLPTsew&s" class="card-img-top" alt="Wayanad">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Wayanad</h5>
+                    <p class="card-text text-muted small">A mist-covered paradise perfect for nature lovers and trekkers.</p>
+                    <a href="wayanad.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Kannur -->
+        <div class="col">
+            <div class="card">
+                <img src="https://static.toiimg.com/photo/50945306.cms" class="card-img-top" alt="Kannur">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Kannur</h5>
+                    <p class="card-text text-muted small">Famous for its handloom industry and pristine beaches.</p>
+                    <a href="kannur.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>      
+        <!-- Kasargod -->
+        <div class="col">
+            <div class="card">
+                <img src="https://images.nativeplanet.com/img/2017/01/madhur-30-1485747257.jpg" class="card-img-top" alt="Kasargod">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Kasargod</h5>
+                    <p class="card-text text-muted small">Known for its majestic Bekal Fort and unique cultural traditions.</p>
+                    <a href="kasargod.html" class="btn btn-primary mt-auto" target="_blank">More details</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

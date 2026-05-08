@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kerala Tourism</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --kerala-green: #1b4d3e;
+            --kerala-gold: #d4af37;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Full-page fixed background with a light overlay for readability */
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/95/2c/a0/tea-gardens.jpg?w=1200&h=-1&s=1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navbar adjustment for transparency */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(5px);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--kerala-green) !important;
+        }
+
+        /* Glassmorphism Contact Card */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 0px; /* Keeping the square look you liked */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            margin-top: 80px;
+            margin-bottom: 80px;
+            color: #333; /* Dark text for readability on the white card */
+            border-bottom: 8px solid var(--kerala-gold);
+        }
+
+        .form-control {
+            border-radius: 0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            background: #fdfdfd;
+        }
+
+        .btn-green {
+            background-color: var(--kerala-green);
+            color: white;
+            font-weight: 600;
+            border-radius: 0;
+            padding: 15px 40px;
+            transition: 0.3s;
+            border: none;
+            width: 100%;
+        }
+
+        .btn-green:hover {
+            background-color: #0d2b23;
+            color: white;
+        }
+
+        .contact-icon-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon-box i {
+            font-size: 1.5rem;
+            color: var(--kerala-gold);
+            margin-right: 20px;
+            background: #f0f4f1;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .social-links a {
+            font-size: 1.4rem;
+            color: var(--kerala-green);
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: var(--kerala-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Home.html">KERALA TOURISM</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="districts.html">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 contact-card">
+                <div class="row g-5">
+                    
+                    <!-- Left Side: Form -->
+                    <div class="col-md-7">
+                        <h2 class="mb-4" style="color: var(--kerala-green);">Plan Your Journey</h2>
+                        <p class="text-muted mb-4">Have questions about your trip to God's Own Country? Send us a message and our experts will get back to you.</p>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">NAME</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">EMAIL</label>
+                                    <input type="email" class="form-control" placeholder="Enter email address">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">MESSAGE</label>
+                                    <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-green">SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right Side: Details -->
+                    <div class="col-md-5 ps-md-5 border-start">
+                        <h2 class="mb-4" style="color: var(--kerala-green);">Contact Details</h2>
+                        
+                        <div class="contact-icon-box">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Location</h6>
+                                <p class="mb-0 text-muted small">Tourism Office, Park View, Trivandrum</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-icon-box">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Phone</h6>
+                                <p class="mb-0 text-muted small">+91 471 2321132</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-icon-box">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Email</h6>
+                                <p class="mb-0 text-muted small">info@keralatourism.org</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h5 class="mb-3" style="color: var(--kerala-green);">Follow Us</h5>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4" style="background: rgba(0,0,0,0.8);">
+        <p class="mb-0 small text-white-50">&copy; 2024 Kerala Tourism Department. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
